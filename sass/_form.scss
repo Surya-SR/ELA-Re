@@ -1,0 +1,169 @@
+.main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    column-gap: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.5);
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        max-width: 70rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+        max-width: 50rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+    }
+
+    .detailsbox {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        backdrop-filter: blur(10px);
+        padding: 2rem 2rem 4rem;
+
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+            margin-bottom: 0;
+        }
+
+        .description-box {
+            font-size: 1.7rem;
+            line-height: 1.5;
+            padding-left: 1.5rem;
+            margin-bottom: 4rem;
+
+            .description {
+                color: #444;
+                font-size: 2rem;
+                font-weight: 300;
+                font-family: "Courgette";
+            }
+
+            .author-name {
+                padding-right: 1rem 4rem 2rem;
+                text-align: right;
+            }
+        }
+
+        .image-box {
+            align-self: center;
+            .image {
+                height: 20rem;
+                margin-bottom: 4rem;
+
+                @media only screen and (max-width: 500px) {
+                    height: 20rem;
+                }
+            }
+        }
+
+        .contact-box {
+            // justify-self: flex-end;
+            margin-top: auto;
+        }
+
+        .contact {
+            padding-left: 1.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+
+            &--header {
+                margin-bottom: 0.5rem;
+                color: $primary-dark;
+            }
+
+            &-no {
+                text-decoration: none;
+                font-weight: 700;
+                color: $primary-darkest;
+            }
+        }
+    }
+
+    .form {
+        flex-grow: 1;
+        background: rgb(245, 245, 245);
+        padding: 2rem 4rem 4rem;
+
+        display: flex;
+        flex-direction: column;
+
+        &--header {
+            justify-content: center;
+        }
+
+        .card--body {
+            margin-bottom: 6rem;
+
+            .form-group {
+                margin: 0 0 4rem 0;
+
+                .lead {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                .form-control {
+                    font-family: "Montserrat";
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid $primary-dark;
+                    padding: 0.5rem 1rem;
+                    width: 100%;
+                    font-size: 1.6rem;
+                    background: rgba(245, 245, 245);
+
+                    &:focus {
+                        &::placeholder {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            .submit-box {
+                text-align: center;
+            }
+
+            .btn-submit {
+                font-size: 2rem;
+                // width: 100%;
+                // display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                padding: 1rem 2rem;
+                border: none;
+                color: #fff;
+                background: $primary-dark;
+                border-radius: 0.3rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                outline: none;
+                font-family: "Montserrat";
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+                &:active {
+                    background: rgba($primary-dark, 0.9);
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

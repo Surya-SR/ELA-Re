@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@300;400&family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat";
+  line-height: 1;
+}
+
+body {
+  min-height: 100vh;
+  padding: 10rem 0 5rem;
+  background: linear-gradient(to bottom right, #00b4d8, #90e0ef);
+}
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 5rem 0 5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+}
+
+.header {
+  padding-left: 1.5rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.header--title {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem 0 1rem;
+  font-weight: 400;
+  font-family: "Montserrat";
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: #0d48a0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media only screen and (max-width: 700px) {
+  .header--title {
+    font-size: 4rem;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header--title {
+    font-size: 4rem;
+  }
+}
+.header--sec-title {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  color: #0077b6;
+}
+
+.follow-box {
+  text-align: center;
+  font-size: 2rem;
+  color: #0d48a0;
+  font-weight: 300;
+  margin-top: auto;
+}
+.follow-box .follow-icons {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+  gap: 2rem;
+}
+.follow-box .follow-icon {
+  height: 4rem;
+  color: #0077b6;
+}
+.follow-box .follow-icon:hover {
+  opacity: 0.8;
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  column-gap: 5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    max-width: 70rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main {
+    max-width: 50rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+}
+.main .detailsbox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  padding: 2rem 2rem 4rem;
+}
+@media only screen and (max-width: 1000px) {
+  .main .detailsbox {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main .detailsbox {
+    margin-bottom: 0;
+  }
+}
+.main .detailsbox .description-box {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  padding-left: 1.5rem;
+  margin-bottom: 4rem;
+}
+.main .detailsbox .description-box .description {
+  color: #444;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Courgette";
+}
+.main .detailsbox .description-box .author-name {
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+  text-align: right;
+}
+.main .detailsbox .image-box {
+  align-self: center;
+}
+.main .detailsbox .image-box .image {
+  height: 20rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 500px) {
+  .main .detailsbox .image-box .image {
+    height: 20rem;
+  }
+}
+.main .detailsbox .contact-box {
+  margin-top: auto;
+}
+.main .detailsbox .contact {
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.main .detailsbox .contact--header {
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+.main .detailsbox .contact-no {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0d48a0;
+}
+.main .form {
+  flex-grow: 1;
+  background: whitesmoke;
+  padding: 2rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.main .form--header {
+  justify-content: center;
+}
+.main .form .card--body {
+  margin-bottom: 6rem;
+}
+.main .form .card--body .form-group {
+  margin: 0 0 4rem 0;
+}
+.main .form .card--body .form-group .lead {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main .form .card--body .form-group .form-control {
+  font-family: "Montserrat";
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0077b6;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+  background: whitesmoke;
+}
+.main .form .card--body .form-group .form-control:focus::placeholder {
+  opacity: 0;
+}
+.main .form .card--body .submit-box {
+  text-align: center;
+}
+.main .form .card--body .btn-submit {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: none;
+  color: #fff;
+  background: #0077b6;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  font-family: "Montserrat";
+}
+.main .form .card--body .btn-submit:hover {
+  transform: scale(1.03);
+}
+.main .form .card--body .btn-submit:active {
+  background: rgba(0, 119, 182, 0.9);
+  transform: scale(1);
+}
+
+.modal-bg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  position: absolute;
+  width: 50rem;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.3rem;
+  text-align: center;
+  transition: opacity 0.3s;
+  padding: 4rem 2rem;
+  line-height: 1.3;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 500px) {
+  .modal {
+    width: 90%;
+  }
+}
+.modal--text {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+.modal .btn-ok {
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: #fff;
+  outline: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: #0077b6;
+}
+.modal .btn-ok:hover {
+  transform: scale(1.03);
+}
+.modal .btn-ok:active {
+  background: rgba(0, 119, 182, 0.9);
+  transform: scale(1);
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
